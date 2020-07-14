@@ -1,5 +1,7 @@
 // load in head necessary static
-document.write('<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/mdui@0.4.3/dist/css/mdui.min.css">');
+var script = document.createElement('script');  
+script.src = "cdn.jsdelivr.net/npm/mdui@0.4.3/dist/css/mdui.min.css";  
+document.head.appendChild(script);
 document.write('<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/plyr/3.6.2/plyr.css">');
 // markdown support
 document.write('<script src="//cdn.jsdelivr.net/npm/markdown-it@10.0.0/dist/markdown-it.min.js"></script>');
