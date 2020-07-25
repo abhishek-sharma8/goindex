@@ -298,7 +298,6 @@ function file_video(path){
 	<br>
 	<video id="player" class="mdui-video-fluid mdui-center" preload controls>
 	  <source src="${url}" type="video/mp4">
-<track kind='captions' label="en" src="${url}" />
 	</video>
 	<br>${playBtn}
 	<!-Fixed label->
@@ -314,7 +313,10 @@ function file_video(path){
 <a href="${url}" class="mdui-fab mdui-fab-fixed mdui-ripple mdui-color-theme-accent"><i class="mdui-icon material-icons">file_download</i></a>
 	`;
 	$('#content').html(content);
-	const player = new Plyr('#player');
+	https://github.com/sampotts/plyr/#options
+const player = new Plyr('video', {captions: {active: true}});
+
+// Expose player so it can be used from the console
 	window.player = player;
 }
 
