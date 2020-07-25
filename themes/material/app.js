@@ -298,6 +298,7 @@ function file_video(path){
 	<br>
 	<video id="player" class="mdui-video-fluid mdui-center" preload controls>
 	  <source src="${url}" type="video/mp4">
+<track kind='captions' label="en" src="${url}" />
 	</video>
 	<br>${playBtn}
 	<!-Fixed label->
