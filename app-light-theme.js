@@ -1,4 +1,4 @@
-// Modified by kulokenci
+// Modified by Abhishek
 // Head
 document.write('<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/mdui@0.4.3/dist/css/mdui.min.css">');
 // Markdown
@@ -388,7 +388,7 @@ function markdown(el, data){
     }
 }
 
-document.write('<script src="//cdn.jsdelivr.net/gh/kulokenci/goindex-drive@2.0/cari.js"></script>');
+document.write('<script src="//cdn.jsdelivr.net/gh/abhishek-sharma8/goindex@2.4/cari.js"></script>');
 
 window.onpopstate = function(){
     var path = window.location.pathname;
