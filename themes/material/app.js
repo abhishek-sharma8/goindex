@@ -3,7 +3,10 @@ var script = document.createElement('script');
 script.src = "cdn.jsdelivr.net/npm/mdui@0.4.3/dist/css/mdui.min.css";  
 document.head.appendChild(script);
 document.write('<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/plyr/3.6.2/plyr.css">');
-<script src="https://raw.githubusercontent.com/thomassturm/VideoSub/master/videosub.js"></script>
+<link href="https://unpkg.com/cloudinary-video-player@1.5.1/dist/cld-video-player.min.css" rel="stylesheet">
+<script src="https://unpkg.com/cloudinary-core@latest/cloudinary-core-shrinkwrap.min.js" type="text/javascript"></script>
+<script src="https://unpkg.com/cloudinary-video-player@1.5.1/dist/cld-video-player.min.js" 
+    type="text/javascript"></script>
 // markdown support
 var script = document.createElement('script');  
 script.src = "//cdn.jsdelivr.net/npm/markdown-it@10.0.0/dist/markdown-it.min.js";  
@@ -297,7 +300,7 @@ function file_video(path){
 	var content = `
 <div class="mdui-container-fluid">
 	<br>
-	<video id="player" class="mdui-video-fluid mdui-center" preload controls>
+	<video id="player" class="cld-video-player" preload controls>
 	  <source src="${url}" type="video/mp4">
 	</video>
 	<br>${playBtn}
