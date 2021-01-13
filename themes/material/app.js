@@ -3,10 +3,6 @@ var script = document.createElement('script');
 script.src = "cdn.jsdelivr.net/npm/mdui@0.4.3/dist/css/mdui.min.css";  
 document.head.appendChild(script);
 document.write('<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/plyr/3.6.2/plyr.css">');
-<link href="https://unpkg.com/cloudinary-video-player@1.5.1/dist/cld-video-player.min.css" rel="stylesheet">
-<script src="https://unpkg.com/cloudinary-core@latest/cloudinary-core-shrinkwrap.min.js" type="text/javascript"></script>
-<script src="https://unpkg.com/cloudinary-video-player@1.5.1/dist/cld-video-player.min.js" 
-    type="text/javascript"></script>
 // markdown support
 var script = document.createElement('script');  
 script.src = "//cdn.jsdelivr.net/npm/markdown-it@10.0.0/dist/markdown-it.min.js";  
